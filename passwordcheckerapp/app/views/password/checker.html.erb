@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+        <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+    <title></title>
+  </head>
+  <body>
+    <h1>Login</h1>
+    <form action="password" method="get">
+      <label for="user_name_id">Username:</label>
+      <input type="text" id="user_name_id" name="user_name"/>
+    </br>
+    <label for="password_id">Password:</label>
+    <input type="text" id="password_id" name="password"/>
+    </br>
+      <input type="submit" id="submit" value="Submit"/>
+    </form>
+    <hr/>
+      <h2><%= @valid_string %>
+      </br>
+        <!-- <%= @valid_user_name_string %>
+      </br>
+        <% @valid_password_string %>
+      </br> -->
+        <%= @same_string %>
+      </br>
+        <%= @long_user_name_string %>
+      </br>
+        <%= @long_password_string %>
+      </br>
+        <%= @not_contain_string %>
+      </br>
+        <%= @contains_string %>
+
+    </h2>
+  </body>
+</html>
